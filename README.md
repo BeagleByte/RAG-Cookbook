@@ -1,2 +1,2 @@
 # RAG-Cookbook
-Collection o docker yaml configurations
+Collection of docker yaml configurations
