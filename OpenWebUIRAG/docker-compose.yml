@@ -45,6 +45,8 @@ services:
 
       # Apache Tika Configuration
       - TIKA_SERVER_URL=http://tika:9998
+      - CONTENT_EXTRACTION_ENGINE=tika
+      - USE_TIKA_FOR_PDF=true
 
       # RAG Settings
       - RAG_EMBEDDING_MODEL=nomic-embed-text:latest
@@ -56,7 +58,7 @@ services:
       # Document Upload Settings
       - ENABLE_RAG_WEB_SEARCH=false
       - ENABLE_RAG_LOCAL_WEB_FETCH=true
-      - PDF_EXTRACT_IMAGES=true
+      - PDF_EXTRACT_IMAGES=false
 
       # Authentication
       - WEBUI_AUTH=false
